@@ -22,9 +22,9 @@ install_homebrew() {
     print_ok "Homebrew already installed"
   fi
 
-  # brew_update
-  # brew_upgrade
-  # brew_cleanup
+  brew_update
+  brew_upgrade
+  brew_cleanup
 }
 
 

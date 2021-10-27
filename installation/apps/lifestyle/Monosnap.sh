@@ -1,5 +1,5 @@
 #!/bin/bash
 
 install_monosnap() {
-  brew_install_app "MEGAsync" "megasync"
+  mas_install "Monosnap" "540348655"
 }

@@ -49,7 +49,8 @@ main() {
   print_line
 
   print_info "Installing essential tools..."
-  find "$(cd .. && pwd)/installation/apps/essentials"
+  # find "$(cd .. && pwd)/installation/apps/essentials"
+  install_monosnap
   # install_xcode_command_line_tools
   # install_homebrew
   # install_git
@@ -115,7 +116,7 @@ main() {
   # setup_create_local_defaults
   # setup_symlinks
   # setup_terminal_theme
-  setup_default_shell
+  # setup_default_shell
   # print_info "Finished configuring system"
   # print_line
 
