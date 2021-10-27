@@ -44,7 +44,7 @@ main() {
   ask_for_sudo
   print_line
 
-  print_info "Installing core tools..."
+  # print_info "Installing core tools..."
   # install_xcode_command_line_tools
   # install_homebrew
   # install_git
@@ -57,7 +57,7 @@ main() {
   # print_info "Finished setting up tracking via git"
   # print_line
 
-  # print_info "Installing utilities..."
+  # print_info "Installing clis..."
   # install_antibody
   # install_awscli
   # install_bfg
@@ -80,22 +80,22 @@ main() {
   # print_info "Finished installing utilities"
   # print_line
 
-  # print_info "Installing applications..."
-  # install_1password
+  # print_info "Installing developer tools..."
+  
   # install_dbeaver
   # install_docker
-  # install_forklift
-  # install_gpgsuite
-  # install_iina # prefer this over vlc
   # install_kitty
   # install_postman
-  # install_megasync
-  # install_raycast
-  # install_rectangle
   # install_vscode
   # install_pycharm
-  # install_android_messages
   # install_keybase
+  
+  # print_info "Installing lifestyle tools..."
+  # install_iina # prefer this over vlc
+  # install_megasync
+  # install_rectangle
+  # install_raycast
+  # install_android_messages
   # install_whatsapp
   # print_info "Finished installing applications"
   # print_line
@@ -106,19 +106,18 @@ main() {
   # print_info "Finished installing browsers"
   # print_line
 
-  # print_info "Installing system configuration..."
-  # setup_create_local_defaults
-  # setup_symlinks
-  # setup_terminal_theme
+  print_info "Installing system configuration..."
+  setup_create_local_defaults
+  setup_symlinks
+  setup_terminal_theme
   # setup_default_shell
-  # print_info "Finished configuring system"
-  # print_line
+  print_info "Finished configuring system"
+  print_line
 
-  # print_info "Installing file associations..."
-  # setup_vscode_file_associations
-  # setup_iina_file_associations
-  # print_info "Finished configuring file associations"
-  # print_line
+  print_info "Installing file associations..."
+  setup_vscode_file_associations
+  print_info "Finished configuring file associations"
+  print_line
   
 
   print_success "🎉 System set up complete! (check README for remaining manual steps)"

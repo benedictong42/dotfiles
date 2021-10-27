@@ -32,7 +32,6 @@ _install_vscode_plugin() {
 _install_vscode_plugins() {
   _install_vscode_plugin "Color Picker" "anseki.vscode-color"
   _install_vscode_plugin "Tailwind CSS IntelliSense" "bradlc.vscode-tailwindcss"
-  _install_vscode_plugin "Firestore Rules" "chflick.firecode"
   _install_vscode_plugin "XML Tools" "dotjoshjohnson.xml"
   _install_vscode_plugin "GitLens" "eamodio.gitlens"
   _install_vscode_plugin "Prettier" "esbenp.prettier-vscode"
@@ -51,8 +50,6 @@ _install_vscode_plugins() {
   _install_vscode_plugin "Which Key" "vspacecode.whichkey"
   _install_vscode_plugin "ShellCheck" "timonwong.shellcheck"
   _install_vscode_plugin "Highlight Matching Tag" "vincaslt.highlight-matching-tag"
-  _install_vscode_plugin "Vim" "vscodevim.vim"
   _install_vscode_plugin "TODO Highlight" "wayou.vscode-todo-highlight"
-  _install_vscode_plugin "VimL" "xadillax.viml"
   _install_vscode_plugin "One Dark Pro" "zhuangtongfa.material-theme"
 }

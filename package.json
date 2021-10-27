@@ -1,0 +1,13 @@
+{
+  "name": "dotfiles",
+  "version": "0.3.4",
+  "repository": "git@github.com:urbanpeakhour/prediction-controller.git",
+  "license": "UNLICENSED",
+  "scripts": {
+    "release": "yarn release-it"
+  },
+  "dependencies": {
+    "release-it": "14.11.6",
+    "@release-it/conventional-changelog": "3.3.0"
+  }
+}

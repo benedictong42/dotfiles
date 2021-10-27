@@ -53,48 +53,6 @@ setup_vscode_file_associations() {
 }
 
 
-setup_iina_file_associations() {
-  local -r iinaId="com.colliderli.iina"
-  local -r iinaName="IINA"
-  _setup_file_association "public.mpeg" "$iinaId" "$iinaName"
-  _setup_file_association "public.mpeg-2-video" "$iinaId" "$iinaName"
-  _setup_file_association "public.mpeg-2-transport-stream" "$iinaId" "$iinaName"
-  _setup_file_association "public.mpeg-4" "$iinaId" "$iinaName"
-  _setup_file_association "public.mpeg-4-audio" "$iinaId" "$iinaName"
-  _setup_file_association "public.avchd-mpeg-2-transport-stream" "$iinaId" "$iinaName"
-  _setup_file_association "public.ac3-audio" "$iinaId" "$iinaName"
-  _setup_file_association "public.3gpp" "$iinaId" "$iinaName"
-  _setup_file_association "public.aiff-audio" "$iinaId" "$iinaName"
-  _setup_file_association "public.mp3" "$iinaId" "$iinaName"
-  _setup_file_association "public.avi" "$iinaId" "$iinaName"
-  _setup_file_association "public.pls-playlist" "$iinaId" "$iinaName"
-  _setup_file_association "public.m3u-playlist" "$iinaId" "$iinaName"
-  _setup_file_association "public.3gpp2" "$iinaId" "$iinaName"
-  _setup_file_association "public.aac-audio" "$iinaId" "$iinaName"
-  _setup_file_association "public.midi-audio" "$iinaId" "$iinaName"
-  _setup_file_association "io.iina.mkv" "$iinaId" "$iinaName"
-  _setup_file_association "io.iina.cue" "$iinaId" "$iinaName"
-  _setup_file_association "io.iina.mka" "$iinaId" "$iinaName"
-  _setup_file_association "io.iina.opus" "$iinaId" "$iinaName"
-  _setup_file_association "com.apple.m4a-audio" "$iinaId" "$iinaName"
-  _setup_file_association "com.apple.m4v-video" "$iinaId" "$iinaName"
-  _setup_file_association "com.apple.protected-mpeg-4-audio" "$iinaId" "$iinaName"
-  _setup_file_association "com.apple.protected-mpeg-4-video" "$iinaId" "$iinaName"
-  _setup_file_association "com.apple.quicktime-movie" "$iinaId" "$iinaName"
-  _setup_file_association "com.apple.coreaudio-format" "$iinaId" "$iinaName"
-  _setup_file_association "com.adobe.flash.video" "$iinaId" "$iinaName"
-  _setup_file_association "com.microsoft.windows-media-wma" "$iinaId" "$iinaName"
-  _setup_file_association "com.microsoft.waveform-audio" "$iinaId" "$iinaName"
-  _setup_file_association "com.microsoft.windows-media-wmv" "$iinaId" "$iinaName"
-  _setup_file_association "com.real.realmedia-vbr" "$iinaId" "$iinaName"
-  _setup_file_association "com.real.realaudio" "$iinaId" "$iinaName"
-  _setup_file_association "com.real.realmedia" "$iinaId" "$iinaName"
-  _setup_file_association "org.xiph.ogv" "$iinaId" "$iinaName"
-  _setup_file_association "org.xiph.ogg-audio" "$iinaId" "$iinaName"
-  _setup_file_association "org.xiph.flac" "$iinaId" "$iinaName"
-}
-
-
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 
