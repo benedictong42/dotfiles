@@ -40,6 +40,8 @@ source developer/kitty.sh
 source developer/postman.sh
 source developer/docker.sh
 source developer/vscode.sh
+source developer/keybase.sh
+source developer/pycharm.sh
 
 # Lifestyle
 source lifestyle/iina.sh
@@ -47,6 +49,8 @@ source lifestyle/megasync.sh
 source lifestyle/raycast.sh
 source lifestyle/rectangle.sh
 source lifestyle/vlc.sh
+source lifestyle/whatsapp.sh
+source lifestyle/android_messages.sh
 
 
 

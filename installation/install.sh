@@ -93,6 +93,10 @@ main() {
   # install_raycast
   # install_rectangle
   # install_vscode
+  # install_pycharm
+  # install_android_messages
+  # install_keybase
+  # install_whatsapp
   # print_info "Finished installing applications"
   # print_line
 
@@ -115,6 +119,7 @@ main() {
   # setup_iina_file_associations
   # print_info "Finished configuring file associations"
   # print_line
+  
 
   print_success "🎉 System set up complete! (check README for remaining manual steps)"
 }
