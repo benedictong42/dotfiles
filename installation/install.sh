@@ -39,14 +39,6 @@ init() {
   fi
 }
 
-find() {
-  local -r directory="$1"
-  for file in  "$directory"/*
-  do
-    shopt -s extdebug; source "$file"; source="$_"; while IFS= read -r func; do declare_output="$(declare -F "${func##* }")"; [[ ${declare_output##* } == $source ]] && "${func##* }"; done < <(declare -F)
-  done
-}
- 
 
 
 
@@ -119,13 +111,13 @@ main() {
   # print_info "Finished installing browsers"
   # print_line
 
-  # print_info "Installing system configuration..."
-  # setup_create_local_defaults
-  # setup_symlinks
-  # setup_terminal_theme
-  # # setup_default_shell
-  # print_info "Finished configuring system"
-  # print_line
+  print_info "Installing system configuration..."
+  setup_create_local_defaults
+  setup_symlinks
+  setup_terminal_theme
+  # setup_default_shell
+  print_info "Finished configuring system"
+  print_line
 
   # print_info "Installing file associations..."
   # setup_vscode_file_associations

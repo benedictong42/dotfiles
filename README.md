@@ -29,13 +29,13 @@ default (you will be given the option to customise this), then run the
 In `bash` or `zsh`:
 
 ```sh
-bash <(curl -Ls https://raw.github.com/benyap/dotfiles/main/scripts/bootstrap.sh)
+bash <(curl -Ls https://raw.github.com/benedictong42/dotfiles/main/scripts/bootstrap.sh)
 ```
 
 If you're using `fish`:
 
 ```sh
-bash (curl -Ls https://raw.github.com/benyap/dotfiles/main/scripts/bootstrap.sh | psub)
+bash (curl -Ls https://raw.github.com/benedictong42/dotfiles/main/scripts/bootstrap.sh | psub)
 ```
 
 ### Manual steps
@@ -111,7 +111,7 @@ Does the grunt work of setting everything up.
 ## If you want to fork this
 
 There are a few spots where the setup / configs couldn't be "generalised", so it
-may have my home directory (benyap) hardcoded. If you want to fork this and make
+may have my home directory (benedictong42) hardcoded. If you want to fork this and make
 it your own, here are a few things you will need to do before you try to install
 it on your machine:
 
