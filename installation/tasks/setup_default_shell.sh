@@ -1,7 +1,7 @@
 #!/bin/bash
 
 setup_default_shell() {
-  local -r shellPath=/usr/local/bin/fish
+  local -r shellPath=/usr/local/bin/zsh
 
   if ! grep "$shellPath" /etc/shells &> /dev/null; then
     execute "sudo echo $shellPath | sudo tee /etc/shells" "Make fish a standard shell in /etc/shells"

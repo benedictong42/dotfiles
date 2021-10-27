@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # Opt out of Homebrew analytics
@@ -39,14 +46,20 @@ load-nvmrc
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Antibody update - run this when new bundles are added to bundles.txt
-alias antibody_update="[ -f ~/.config/antibody/bundles.txt ] && antibody bundle < ~/.config/antibody/bundles.txt > ~/.zsh_plugins.sh"
+# alias antibody_update=" antibody bundle < ~/.config/antibody/bundles.txt > ~/.zsh_plugins.sh"
 
 # Load plugins from antibody
-[ -f ~/.zsh_plugins.sh ] && source ~/.zsh_plugins.sh
+# [ -f ~/.zsh_plugins.sh ] && source ~/.zsh_plugins.sh
 
-autoload -Uz async && async
+# Sad boi version because the static way does not work for some stupid reason
+source <(antibody init)
+antibody bundle < ~/.zsh_plugins.txt
+
+
+
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -64,3 +77,6 @@ alias pyenv="source venv/bin/activate"
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local;
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
