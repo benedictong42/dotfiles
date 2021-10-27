@@ -39,9 +39,6 @@ load-nvmrc
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-# Source Google Cloud SDK autocomplete
-source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
-source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
 
 # Antibody update - run this when new bundles are added to bundles.txt
 alias antibody_update="[ -f ~/.config/antibody/bundles.txt ] && antibody bundle < ~/.config/antibody/bundles.txt > ~/.zsh_plugins.sh"
@@ -49,13 +46,7 @@ alias antibody_update="[ -f ~/.config/antibody/bundles.txt ] && antibody bundle 
 # Load plugins from antibody
 [ -f ~/.zsh_plugins.sh ] && source ~/.zsh_plugins.sh
 
-# Load pure prompt
 autoload -Uz async && async
-autoload -U promptinit && promptinit
-prompt pure
-
-# Customise pure
-PROMPT='%F{yellow}%* '$PROMPT
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 

@@ -201,3 +201,11 @@ show_spinner() {
     printf "\r"
   done
 }
+
+source_all_file_in_dir() {
+  local -r directory="$1"
+  for file in  "$directory"/*
+  do
+      source "$file"
+  done
+}

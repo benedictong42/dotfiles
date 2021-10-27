@@ -39,12 +39,25 @@ init() {
   fi
 }
 
+find() {
+  local -r directory="$1"
+  for file in  "$directory"/*
+  do
+    shopt -s extdebug; source "$file"; source="$_"; while IFS= read -r func; do declare_output="$(declare -F "${func##* }")"; [[ ${declare_output##* } == $source ]] && "${func##* }"; done < <(declare -F)
+  done
+}
+ 
+
+
+
+
 main() {
   print_info "You may be asked for your password to execute sudo."
   ask_for_sudo
   print_line
 
-  # print_info "Installing core tools..."
+  print_info "Installing essential tools..."
+  find "$(cd .. && pwd)/installation/apps/essentials"
   # install_xcode_command_line_tools
   # install_homebrew
   # install_git
@@ -106,18 +119,18 @@ main() {
   # print_info "Finished installing browsers"
   # print_line
 
-  print_info "Installing system configuration..."
-  setup_create_local_defaults
-  setup_symlinks
-  setup_terminal_theme
-  # setup_default_shell
-  print_info "Finished configuring system"
-  print_line
+  # print_info "Installing system configuration..."
+  # setup_create_local_defaults
+  # setup_symlinks
+  # setup_terminal_theme
+  # # setup_default_shell
+  # print_info "Finished configuring system"
+  # print_line
 
-  print_info "Installing file associations..."
-  setup_vscode_file_associations
-  print_info "Finished configuring file associations"
-  print_line
+  # print_info "Installing file associations..."
+  # setup_vscode_file_associations
+  # print_info "Finished configuring file associations"
+  # print_line
   
 
   print_success "🎉 System set up complete! (check README for remaining manual steps)"
