@@ -79,6 +79,12 @@ main() {
   print_info "Finished installing browsers"
   print_line
 
+  print_info "Installing App Store Apps..."
+  dangerously_run_all_funcs_in_dir "$(cd .. && pwd)/installation/apps/apple_store"
+  print_info "Finished installing App Store Apps"
+  print_line
+
+
   print_info "Installing system configuration..."
   setup_create_local_defaults
   setup_symlinks
