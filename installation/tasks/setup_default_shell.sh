@@ -1,18 +1,18 @@
 #!/bin/bash
 
 setup_default_shell() {
-  local -r shellPath=/usr/local/bin/zsh
+  local -r shellPath="/usr/local/bin/$1"
 
   if ! grep "$shellPath" /etc/shells &> /dev/null; then
-    execute "sudo echo $shellPath | sudo tee /etc/shells" "Make fish a standard shell in /etc/shells"
+    execute "sudo echo $shellPath | sudo tee /etc/shells" "Make $1 a standard shell in /etc/shells"
   else
-    print_ok "fish already defined as a standard shell in /etc/shells"
+    print_ok "$1 already defined as a standard shell in /etc/shells"
   fi
 
   if ! test "$(_get_default_shell)" == "$shellPath"; then
-    execute "sudo chsh -s $shellPath $USER" "Set fish as default shell"
+    execute "sudo chsh -s $shellPath $USER" "Set $1 as default shell"
   else
-    print_ok "fish is already the default shell"
+    print_ok "$1 is already the default shell"
   fi
 }
 

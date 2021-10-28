@@ -209,3 +209,14 @@ source_all_file_in_dir() {
       source "$file"
   done
 }
+
+dangerously_run_all_funcs_in_dir() {
+  local -r directory="$1"
+  for file in  "$directory"/*;do    
+    local funcs="$(sed -E -n 's/^function *([A-Za-z0-9_]+) *\{/\1/p; s/^([A-Za-z0-9_]+) *\(\) *\{/\1/p' $file)"
+    for func in "${funcs[@]}"; do        
+      eval "$func"
+    done    
+  done
+}
+ 
