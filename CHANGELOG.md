@@ -1,3 +1,25 @@
+## [0.2.0](https://github.com/urbanpeakhour/prediction-controller/compare/0.1.0...0.2.0) (2021-10-28)
+
+
+### Features
+
+* **app:** more apps ([f9c1e74](https://github.com/urbanpeakhour/prediction-controller/commit/f9c1e742d1e4adb9750ea107a691b0643c0e200b))
+* install apple store ([9ee9c1a](https://github.com/urbanpeakhour/prediction-controller/commit/9ee9c1abf4cdac11f207e60723bdd16bdf46b1e4))
+* more installation ([0d59fdf](https://github.com/urbanpeakhour/prediction-controller/commit/0d59fdf83bf9c03e80f91420269e7a1fc78bcfe7))
+* **zshrc:** powerlevel10k ([19f1ba3](https://github.com/urbanpeakhour/prediction-controller/commit/19f1ba3006a4f5669237466e01339671bb1a9df7))
+
+
+### Bug Fixes
+
+* bandwidth not clocker ([9fbeb2d](https://github.com/urbanpeakhour/prediction-controller/commit/9fbeb2d2c311b77e8aa5ea2702b5598a26b14c5d))
+* pycharm ([2e5597c](https://github.com/urbanpeakhour/prediction-controller/commit/2e5597c30529ed590c9c9572cec3b43148384fd0))
+
+
+### Chores
+
+* fish ([16099f2](https://github.com/urbanpeakhour/prediction-controller/commit/16099f2d34cd69126685ccef1d37141dc6599e6b))
+* **zsh:** update plugin support ([ce459a3](https://github.com/urbanpeakhour/prediction-controller/commit/ce459a340a2b6e049959d91035babff7085043c1))
+
 ## 0.1.0 (2021-10-27)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "dotfiles",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "repository": "git@github.com:urbanpeakhour/prediction-controller.git",
   "license": "UNLICENSED",
   "scripts": {
