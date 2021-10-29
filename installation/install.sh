@@ -50,6 +50,7 @@ main() {
   install_xcode_command_line_tools
   install_homebrew
   install_git
+  install_mas
   opt_out_of_hombrew_analytics
   print_info "Finished installing essential tools"
   print_line

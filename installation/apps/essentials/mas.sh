@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Allows installing apple store apps
-install_mass() {
+install_mas() {
   brew_install "Mas" "mas"
 }
 

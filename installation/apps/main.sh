@@ -9,6 +9,3 @@ source_all_file_in_dir "$(cd .. && pwd)/apps/browsers"
 source_all_file_in_dir "$(cd .. && pwd)/apps/clis"
 source_all_file_in_dir "$(cd .. && pwd)/apps/developer"
 source_all_file_in_dir "$(cd .. && pwd)/apps/lifestyle"
-
-
-
