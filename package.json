@@ -1,6 +1,6 @@
 {
   "name": "dotfiles",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "repository": "git@github.com:benedictong42/dotfiles.git",
   "license": "MIT",
   "scripts": {

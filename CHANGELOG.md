@@ -1,3 +1,21 @@
+## [0.3.0](https://github.com/benedictong42/dotfiles/compare/0.2.0...0.3.0) (2021-10-29)
+
+
+### Features
+
+* kitty search submodule ([373ec55](https://github.com/benedictong42/dotfiles/commit/373ec552fcb00a469e997933914ca98a5e790c7d))
+
+
+### Bug Fixes
+
+* install mas ([f64f6e7](https://github.com/benedictong42/dotfiles/commit/f64f6e75c6b5e20bfeccb02068bec29f2cfbdb44))
+* package.json ([4dfbe53](https://github.com/benedictong42/dotfiles/commit/4dfbe535d581ac8fa0778b3cc4da8686ae73ec9f))
+
+
+### Chores
+
+* update kitty config ([9198ce6](https://github.com/benedictong42/dotfiles/commit/9198ce6f94318b302d5a974413e30070ae895c17))
+
 ## [0.2.0](https://github.com/urbanpeakhour/prediction-controller/compare/0.1.0...0.2.0) (2021-10-28)
 
 
