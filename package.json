@@ -1,8 +1,8 @@
 {
   "name": "dotfiles",
   "version": "0.2.0",
-  "repository": "git@github.com:urbanpeakhour/prediction-controller.git",
-  "license": "UNLICENSED",
+  "repository": "git@github.com:benedictong42/dotfiles.git",
+  "license": "MIT",
   "scripts": {
     "release": "yarn release-it"
   },
