@@ -11,7 +11,7 @@ other versions of macOS (or other UNIX distributions) is not guaranteed.
 ## Installation
 
 ⚠️ **Warning**: If you want to give these dotfiles a try and decide to download
-/ fork the scripts, you should review the code and remove anything you don't
+/ fork the installation, you should review the code and remove anything you don't
 want or don't understand before you install. Use at your own risk!
 
 ### Dependencies
@@ -24,24 +24,24 @@ want or don't understand before you install. Use at your own risk!
 
 Running the commands below will download the repository to `$HOME/.dotfiles` by
 default (you will be given the option to customise this), then run the
-`scripts/install.sh` script.
+`installation/install.sh` script.
 
 In `bash` or `zsh`:
 
 ```sh
-bash <(curl -Ls https://raw.github.com/benedictong42/dotfiles/main/scripts/bootstrap.sh)
+bash <(curl -Ls https://raw.github.com/benedictong42/dotfiles/main/installation/bootstrap.sh)
 ```
 
 If you're using `fish`:
 
 ```sh
-bash (curl -Ls https://raw.github.com/benedictong42/dotfiles/main/scripts/bootstrap.sh | psub)
+bash (curl -Ls https://raw.github.com/benedictong42/dotfiles/main/installation/bootstrap.sh | psub)
 ```
 
 ### Manual steps
 
 A couple of other useful things that I also do but couldn't figure out how to
-automate with scripts:
+automate with installation:
 
 - Install [Monosnap](https://monosnap.com/)
 - Import [Raycast](https://raycast.com) configuration from
@@ -50,7 +50,7 @@ automate with scripts:
   [LunarVim](https://www.lunarvim.org/01-installing.html#prerequisites) - I've
   found that it's just easier to use the installation wizard, though you will
   need to symlink `~/.config/lvim/config.lua` if you want to track changes
-  (automated with `scripts/post.sh`)
+  (automated with `installation/post.sh`)
 
 ### Post install
 
@@ -58,15 +58,15 @@ You may want to run this to do some additional symlinking after completing the
 manual steps. Navigate to the root of the project and run the `post.sh` script:
 
 ```sh
-./scripts/post.sh
+./installation/post.sh
 ```
 
 ### Updating
 
 To update from the remote, simple do a `git pull` and run
-`./scripts/install.sh`.
+`./installation/install.sh`.
 
-If you've made local changes, simply run `./scripts/install.sh`.
+If you've made local changes, simply run `./installation/install.sh`.
 
 ## Environment customisation
 
@@ -77,29 +77,29 @@ specific or that should not tracked in `git`. They are:
   `home/.gitconfig.local.template`)
 - `home/.zshrc.local` - useful for customising `zsh`
 - `home/.config/fish/config.fish.local` - useful for customising `fish`
-- `home/.config/raycast/local` - useful for adding Raycast scripts that have
+- `home/.config/raycast/local` - useful for adding Raycast installation that have
   sensitive information hardcoded
 
-## What the scripts do
+## What the installation do
 
 ### Bootstrap - `bootstrap.sh`
 
 Used to download and set up the dotfiles with zero dependencies. Like, you
 literally only need a shell and `curl` which should be be installed already.
 
-1. Source helper functions from `scripts/utils.sh`. If it doesn't exist,
+1. Source helper functions from `installation/utils.sh`. If it doesn't exist,
    download it, then source it.
 2. Check if the script was run inline (e.g. using the install command from this
    README). If it was, it'll download this repository as a zip and extract it so
-   that it has all the other scripts available.
+   that it has all the other installation available.
 3. Run the `install.sh` script to do the rest of the work.
 
 ### Install - `install.sh`
 
 Does the grunt work of setting everything up.
 
-1. Source some utilities and helper functions - `scripts/utils.sh`.
-2. Ask for `sudo` (and keeps the sudo state refreshed until the scripts finish).
+1. Source some utilities and helper functions - `installation/utils.sh`.
+2. Ask for `sudo` (and keeps the sudo state refreshed until the installation finish).
 3. Install core tools that are needed to install the rest of the stuff (XCode
    command line tools, git, Homebrew).
 4. Set up the folder as a `git` repository so that any changes can be tracked.
@@ -115,8 +115,8 @@ may have my home directory (benedictong42) hardcoded. If you want to fork this a
 it your own, here are a few things you will need to do before you try to install
 it on your machine:
 
-- `scripts/bootstrap.sh` - set `REPOSITORY` variable to your own repository
-- `scripts/install.sh` - set `REPOSITORY_ORIGIN` variable to your own
+- `installation/bootstrap.sh` - set `REPOSITORY` variable to your own repository
+- `installation/install.sh` - set `REPOSITORY_ORIGIN` variable to your own
   repository's origin
 - `home/.config/fish/fish_variables` - some of the variables have my home
   directory baked in, so you will need to rename these
@@ -124,7 +124,7 @@ it on your machine:
 And in case it wasn't obvious, the `home` directory in this project more or less
 tries to mirror what would be symlinked to your actual home directory. It's
 pretty easy to add more things you want to symlink - have a look at
-`scripts/tasks/setup_symlinks.sh`.
+`installation/tasks/setup_symlinks.sh`.
 
 ## Check these out
 

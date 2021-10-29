@@ -13,7 +13,7 @@ init() {
 
   # Load utils and functions
   source utils.sh && cd "$startDir" || exit 1
-  source installs/main.sh && cd "$startDir" || exit 1
+  source apps/main.sh && cd "$startDir" || exit 1
   source tasks/main.sh && cd "$startDir" || exit 1
 
   print_line
