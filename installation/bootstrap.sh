@@ -88,7 +88,7 @@ download_source() {
   rm -rf tempFile
 
   # Navigate to directory
-  cd "$installDirectory/scripts" || return 1
+  cd "$installDirectory/installation" || return 1
 }
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
