@@ -1,3 +1,11 @@
+### [0.3.2](https://github.com/benedictong42/dotfiles/compare/0.3.1...0.3.2) (2021-10-30)
+
+
+### Bug Fixes
+
+* use installation ([d6734a3](https://github.com/benedictong42/dotfiles/commit/d6734a37734e63fd03d4ed9b765b8213d2250b90))
+* utils path ([eab454d](https://github.com/benedictong42/dotfiles/commit/eab454d230ff6b4617dd2157f6313b284aae4059))
+
 ### [0.3.1](https://github.com/benedictong42/dotfiles/compare/0.3.0...0.3.1) (2021-10-30)
 
 
