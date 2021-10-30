@@ -3,7 +3,7 @@
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 declare -r REPOSITORY="benedictong42/dotfiles"
-declare -r UTILS_URL="https://raw.githubusercontent.com/$REPOSITORY/master/scripts/utils.sh"
+declare -r UTILS_URL="https://raw.githubusercontent.com/$REPOSITORY/master/installation/utils.sh"
 declare -r TARBALL_URL="https://github.com/$REPOSITORY/tarball/master"
 
 declare DEFAULT_INSTALL_DIRECTORY="$HOME/.dotfiles"
