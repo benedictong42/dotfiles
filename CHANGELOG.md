@@ -1,3 +1,18 @@
+### [0.3.1](https://github.com/benedictong42/dotfiles/compare/0.3.0...0.3.1) (2021-10-30)
+
+
+### Bug Fixes
+
+* more master ([42ed82c](https://github.com/benedictong42/dotfiles/commit/42ed82c99ea3bd084b104762db068826f382fbcb))
+* more master ([f3c811b](https://github.com/benedictong42/dotfiles/commit/f3c811b3779540692b4aa03e5e4b6bc92eb2738b))
+* README and post installation ([d298748](https://github.com/benedictong42/dotfiles/commit/d29874848463bfc4fce62c66d42f6ef20a5a4ce5))
+
+
+### Chores
+
+* disable apple store installs ([68b679a](https://github.com/benedictong42/dotfiles/commit/68b679ab566b081d0b76ef16d09d5eb6f93a420f))
+* use master in curl ([8cc022e](https://github.com/benedictong42/dotfiles/commit/8cc022e5cc5b0bef18e1076b18a9c61ab7a133a9))
+
 ## [0.3.0](https://github.com/benedictong42/dotfiles/compare/0.2.0...0.3.0) (2021-10-29)
 
 
