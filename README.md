@@ -29,13 +29,13 @@ default (you will be given the option to customise this), then run the
 In `bash` or `zsh`:
 
 ```sh
-bash <(curl -Ls https://raw.github.com/benedictong42/dotfiles/main/installation/bootstrap.sh)
+bash <(curl -Ls https://raw.github.com/benedictong42/dotfiles/master/installation/bootstrap.sh)
 ```
 
 If you're using `fish`:
 
 ```sh
-bash (curl -Ls https://raw.github.com/benedictong42/dotfiles/main/installation/bootstrap.sh | psub)
+bash (curl -Ls https://raw.github.com/benedictong42/dotfiles/master/installation/bootstrap.sh | psub)
 ```
 
 ### Manual steps
