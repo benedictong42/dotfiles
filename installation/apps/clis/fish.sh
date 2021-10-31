@@ -12,8 +12,7 @@ install_fish() {
 # running this function anyway will ensure that it is up to date.
 _install_fisher() {
   local exitCode=0
-
-  /usr/local/bin/fish -c "curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher" &> /dev/null
+  "$(get_base_installation_path)/fish" -c "curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher" &> /dev/null
 
   exitCode=$?
 
@@ -42,7 +41,7 @@ _install_fish_plugin() {
   local -r plugins_list="$(cd .. && pwd)/home/.config/fish/fish_plugins"
 
   if ! grep "$plugin" "$plugins_list" &> /dev/null; then
-    execute "/usr/local/bin/fish -c 'fisher install $plugin'" "fish plugin - $name"
+    execute "$(get_base_installation_path)/fish -c 'fisher install $plugin'" "fish plugin - $name"
   else
     print_ok "fish plugin - $name already installed"
   fi

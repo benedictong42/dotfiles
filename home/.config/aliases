@@ -16,8 +16,8 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 
 # ls (exa)
-alias ls="exa --group-directories-first --classify --no-user -al"
-alias lsc="exa --group-directories-first --classify --no-user --no-time --no-permissions --no-filesize -l"
+alias lsd="exa --group-directories-first --classify --no-user -al"
+alias ls="exa --group-directories-first --classify --no-user --no-time --no-permissions --no-filesize -l"
 alias lsa="ls"
 alias lst="lsa --tree --ignore-glob 'node_modules|venv|dist|build|.git'"
 alias ls2="lst --level=2"

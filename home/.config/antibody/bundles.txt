@@ -5,3 +5,4 @@ mafredri/zsh-async
 
 zsh-users/zsh-history-substring-search
 romkatv/powerlevel10k
+zsh-users/zsh-syntax-highlighting

@@ -220,3 +220,15 @@ dangerously_run_all_funcs_in_dir() {
   done
 }
  
+get_base_installation_path() {
+  if _is_arm; then
+    echo "/usr/local/bin/" 
+  else
+    echo "/opt/homebrew/bin" 
+  fi
+}
+
+_is_arm() {
+  
+  mas list | grep "arm" &> /dev/null && return 0 || return 1
+}

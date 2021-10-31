@@ -1,7 +1,7 @@
 #!/bin/bash
 
 setup_default_shell() {
-  local -r shellPath="/usr/local/bin/$1"
+  local -r shellPath "$(get_base_installation_path)/$1"
 
   if ! grep "$shellPath" /etc/shells &> /dev/null; then
     execute "sudo echo $shellPath | sudo tee /etc/shells" "Make $1 a standard shell in /etc/shells"

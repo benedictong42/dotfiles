@@ -1,5 +1,5 @@
 {
-  "workbench.colorTheme": "One Dark Pro",
+  "workbench.colorTheme": "Dracula",
   "security.workspace.trust.untrustedFiles": "open",
   "terminal.integrated.defaultProfile.osx": "fish",
   "editor.fontFamily": "Menlo, 'Courier New', monospace",
@@ -36,7 +36,6 @@
       "overviewRulerColor": "lightpink"
     }
   ],
-  "window.zoomLevel": 1,
   "[python]": {
     "editor.defaultFormatter": "ms-python.python"
   },

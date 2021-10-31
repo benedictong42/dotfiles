@@ -1,9 +1,16 @@
+export PATH=/opt/homebrew/bin:$PATH
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
+
+# Install antigen
+source /opt/homebrew/share/antigen/antigen.zsh
+
+
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -48,16 +55,16 @@ load-nvmrc
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
-# Antibody update - run this when new bundles are added to bundles.txt
+# # Antibody update - run this when new bundles are added to bundles.txt
 # alias antibody_update=" antibody bundle < ~/.config/antibody/bundles.txt > ~/.zsh_plugins.sh"
 
-# Load plugins from antibody
+# # Load plugins from antibody
 # [ -f ~/.zsh_plugins.sh ] && source ~/.zsh_plugins.sh
 
 # Sad boi version because the static way does not work for some stupid reason
 source <(antibody init)
 antibody bundle < ~/.zsh_plugins.txt
-
+antigen bundle zsh-users/zsh-autosuggestions
 
 
 
