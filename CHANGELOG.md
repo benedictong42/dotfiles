@@ -1,3 +1,10 @@
+### [0.3.3](https://github.com/benedictong42/dotfiles/compare/0.3.2...0.3.3) (2021-10-31)
+
+
+### Bug Fixes
+
+* various fixes for arm ([54362a4](https://github.com/benedictong42/dotfiles/commit/54362a4acb0203824278a8103cf929fa19b97333))
+
 ### [0.3.2](https://github.com/benedictong42/dotfiles/compare/0.3.1...0.3.2) (2021-10-30)
 
 
