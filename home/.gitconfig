@@ -265,3 +265,5 @@
   #     by the local ones
 
   path = ~/.gitconfig.local
+[pull]
+	rebase = false

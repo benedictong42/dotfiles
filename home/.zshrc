@@ -7,11 +7,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# Install antigen
-source /opt/homebrew/share/antigen/antigen.zsh
-
-
-
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # Opt out of Homebrew analytics
@@ -56,16 +51,12 @@ load-nvmrc
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # # Antibody update - run this when new bundles are added to bundles.txt
-# alias antibody_update=" antibody bundle < ~/.config/antibody/bundles.txt > ~/.zsh_plugins.sh"
+alias antibody_update="antibody bundle < ~/.config/antibody/bundles.txt > ~/.zsh_plugins.sh"
 
 # # Load plugins from antibody
-# [ -f ~/.zsh_plugins.sh ] && source ~/.zsh_plugins.sh
-
-# Sad boi version because the static way does not work for some stupid reason
-source <(antibody init)
-antibody bundle < ~/.zsh_plugins.txt
-antigen bundle zsh-users/zsh-autosuggestions
-
+[ -f ~/.zsh_plugins.sh ] && source ~/.zsh_plugins.sh
+autoload -U compinit && compinit
+autoload -Uz async && async
 
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
