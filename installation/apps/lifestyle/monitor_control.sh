@@ -1,5 +1,5 @@
 #!/bin/bash
 
-install_lunar() {
+install_monitor_control() {
   brew_install_app "MonitorContol" "monitorcontrol"
 }
