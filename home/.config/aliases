@@ -43,6 +43,8 @@ alias gs="git status"
 alias gl="git l"
 alias gg="git g"
 alias ga="git ga"
+alias gp="git pull"
+alias gc="git checkout"
 
 # Homebrew
 alias b="brew"
