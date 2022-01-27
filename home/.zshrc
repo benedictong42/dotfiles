@@ -1,4 +1,10 @@
+
+#### FIG ENV VARIABLES ####
+# Please make sure this block is at the start of this file.
+[ -s ~/.fig/shell/pre.sh ] && source ~/.fig/shell/pre.sh
+#### END FIG ENV VARIABLES ####
 export PATH=/opt/homebrew/bin:$PATH
+
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -78,3 +84,21 @@ alias pyenv="source venv/bin/activate"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+#### FIG ENV VARIABLES ####
+# Please make sure this block is at the end of this file.
+[ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
+#### END FIG ENV VARIABLES ####
+
+
+# Setup asdf
+# https://hackercodex.com/guide/python-development-environment-on-mac-osx/
+. $(brew --prefix asdf)/asdf.sh
+asdf reshim ruby
+
+# https://github.com/asdf-vm/asdf/issues/692#issuecomment-642748733
+autoload -U +X bashcompinit && bashcompinit
+
+# set up bash completions
+# https://blog.natterstefan.me/how-to-use-multiple-node-version-with-asdf
+. $(brew --prefix asdf)/etc/bash_completion.d/asdf.bash

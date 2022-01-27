@@ -79,5 +79,13 @@
     "key": "ctrl+shift+m",
     "command": "workbench.action.terminal.moveToTerminalPanel",
     "when": "terminalFocus"
+  },
+  {
+    "key": "cmd+=",
+    "command": "zoombar-vscode.zoomIn"
+  },
+  {
+    "key": "cmd+-",
+    "command": "zoombar-vscode.zoomOut"
   }
 ]

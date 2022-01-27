@@ -42,6 +42,8 @@
   "[xml]": {
     "editor.defaultFormatter": "DotJoshJohnson.xml"
   },
+  "zoombar.defaultZoom": 110,
+  "zoombar.zoomUnit": 10,
   // -- Vim settings
   "vim.highlightedyank.enable": true,
   "vim.smartRelativeLine": true,
@@ -332,5 +334,18 @@
       "name": "Search keybindings",
       "commands": ["whichkey.searchBindings"]
     }
-  ]
+  ],
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "editor.accessibilitySupport": "off",
+  "window.zoomLevel": 0.5227586988632231,
+  "workbench.preferredDarkColorTheme": "Dracula",
+  "workbench.preferredLightColorTheme": "Atom One Light",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[sql]": {
+    "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
+  },
+  "sql-formatter.uppercase": true
 }
