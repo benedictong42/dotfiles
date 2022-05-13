@@ -16,6 +16,7 @@ setup_symlinks() {
     ".config/antibody"
     ".config/fish"
     ".config/kitty"
+    ".config/starship.toml"
     ".config/raycast"
     ".config/aliases"
     "Library/Application Support/Code/User/settings.json"

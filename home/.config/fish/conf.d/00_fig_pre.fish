@@ -1,1 +1,0 @@
-/Users/benedictong/.fig/shell/pre.fish
