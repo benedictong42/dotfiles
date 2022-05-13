@@ -19,6 +19,7 @@ setup_symlinks() {
     ".config/starship.toml"
     ".config/raycast"
     ".config/aliases"
+    ".config/flameshot"
     "Library/Application Support/Code/User/settings.json"
     "Library/Application Support/Code/User/keybindings.json"
     ".gitconfig"

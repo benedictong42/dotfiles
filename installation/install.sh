@@ -89,7 +89,6 @@ main() {
   print_info "Installing system configuration..."
   setup_create_local_defaults
   setup_symlinks
-  setup_terminal_theme
   setup_default_shell "zsh"
   print_info "Finished configuring system"
   print_line

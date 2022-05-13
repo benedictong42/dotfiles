@@ -17,7 +17,7 @@
   "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.bellDuration": 10000,
   "editor.tabSize": 2,
-  "terminal.integrated.fontFamily": "'MesloLGS Nerd Font', Menlo, 'Courier New', monospace",
+  "terminal.integrated.fontFamily": "'Hack Nerd Font', Menlo, 'Courier New', monospace",
   "editor.renderControlCharacters": true,
   "editor.minimap.enabled": false,
   "editor.suggest.showWords": false,

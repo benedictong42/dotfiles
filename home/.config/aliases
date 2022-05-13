@@ -44,6 +44,7 @@ alias gl="git l"
 alias gg="git g"
 alias ga="git ga"
 alias gp="git pull"
+alias gs="git push"
 alias gc="git checkout"
 
 # Homebrew

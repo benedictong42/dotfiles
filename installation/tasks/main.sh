@@ -10,4 +10,4 @@ source setup_file_associations.sh
 source setup_git_tracking.sh
 source setup_symlinks.sh
 source setup_symlinks_post.sh
-source setup_terminal_theme.sh
+
