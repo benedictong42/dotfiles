@@ -8,5 +8,6 @@
 # Optional parameters:
 # @raycast.icon 🖨
 # @raycast.packageName Developer Utilities
+. $(brew --prefix asdf)/asdf.sh
 
 pbpaste | python -m json.tool

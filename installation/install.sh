@@ -51,6 +51,7 @@ main() {
   install_homebrew
   install_git
   install_mas
+  install_asdf
   opt_out_of_hombrew_analytics
   print_info "Finished installing essential tools"
   print_line

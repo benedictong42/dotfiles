@@ -1,4 +1,4 @@
-#!/opt/homebrew/opt/node@14/bin/node
+#!/Users/benedictong/.asdf/installs/nodejs/18.1.0/bin/node
 
 // Required parameters:
 // @raycast.schemaVersion 1
