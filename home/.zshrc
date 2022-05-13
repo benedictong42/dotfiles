@@ -15,7 +15,6 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-# ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Antibody update - run this when new bundles are added to bundles.txt
 alias antibody_update="antibody bundle < ~/.config/antibody/bundles.txt > ~/.zsh_plugins.sh"
