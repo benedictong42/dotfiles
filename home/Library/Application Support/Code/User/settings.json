@@ -2,18 +2,19 @@
   "workbench.colorTheme": "Dracula",
   "security.workspace.trust.untrustedFiles": "open",
   "terminal.integrated.defaultProfile.osx": "fish",
-  "editor.fontFamily": "Menlo, 'Courier New', monospace",
+  "editor.fontFamily": "'Hack Nerd Font', 'Courier New', monospace",
   "editor.codeLens": false,
   "explorer.confirmDragAndDrop": false,
   "prettier.proseWrap": "always",
   "editor.formatOnSave": true,
   "files.associations": {
     "fish_variables": "fish",
-    ".env": "ini"
+    ".env": "ini",
+    "*.pbxproj": "applescript"
   },
   "workbench.iconTheme": "material-icon-theme",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "terminal.external.osxExec": "kitty.app",
+  "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.bellDuration": 10000,
   "editor.tabSize": 2,
   "terminal.integrated.fontFamily": "'MesloLGS Nerd Font', Menlo, 'Courier New', monospace",
@@ -339,7 +340,7 @@
     "FIG_NEW_SESSION": "1"
   },
   "editor.accessibilitySupport": "off",
-  "window.zoomLevel": 0.5227586988632231,
+  "window.zoomLevel": 0,
   "workbench.preferredDarkColorTheme": "Dracula",
   "workbench.preferredLightColorTheme": "Atom One Light",
   "typescript.updateImportsOnFileMove.enabled": "always",
@@ -347,5 +348,28 @@
   "[sql]": {
     "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
   },
-  "sql-formatter.uppercase": true
+  "[ruby]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "sql-formatter.uppercase": true,
+  "workbench.editorAssociations": {
+    "*.p12": "default"
+  },
+  "cSpell.userWords": [
+    "Appbar",
+    "Authorised",
+    "Checkin",
+    "Colour",
+    "initialise",
+    "Initialised",
+    "isequal",
+    "ORDERATTRIBUTE",
+    "ORDERSTATUS",
+    "Pressable",
+    "stackable",
+    "TIMEWINDOWS",
+    "viewability",
+    "WVGA"
+  ]
 }

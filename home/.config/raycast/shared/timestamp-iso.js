@@ -1,4 +1,4 @@
-#!/usr/local/opt/node@14/bin/node
+#!/opt/homebrew/opt/node@14/bin/node
 
 // Required parameters:
 // @raycast.schemaVersion 1
