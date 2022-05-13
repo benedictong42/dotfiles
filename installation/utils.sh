@@ -222,13 +222,12 @@ dangerously_run_all_funcs_in_dir() {
  
 get_base_installation_path() {
   if _is_arm; then
-    echo "/usr/local/bin/" 
-  else
     echo "/opt/homebrew/bin" 
+  else
+    echo "/usr/local/bin" 
   fi
 }
 
 _is_arm() {
-  
-  mas list | grep "arm" &> /dev/null && return 0 || return 1
+  sysctl -n hw.optional.arm64 &> /dev/null && return 0 || return 1
 }
