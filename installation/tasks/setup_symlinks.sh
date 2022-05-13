@@ -14,12 +14,12 @@ setup_symlinks() {
   local -ar links=(
     ".bin"
     ".config/antibody"
-    ".config/fish"
     ".config/kitty"
     ".config/starship.toml"
     ".config/raycast"
     ".config/aliases"
     ".config/flameshot"
+    "Library/Preferences/com.googlecode.iterm2.plist"
     "Library/Application Support/Code/User/settings.json"
     "Library/Application Support/Code/User/keybindings.json"
     ".gitconfig"

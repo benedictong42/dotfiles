@@ -46,7 +46,6 @@ _install_vscode_plugins() {
   _install_vscode_plugin "Jupyter" "ms-toolsai.jupyter"
   _install_vscode_plugin "Color Highlight" "naumovs.color-highlight"
   _install_vscode_plugin "Material Icon Theme" "pkief.material-icon-theme"
-  _install_vscode_plugin "Fish" "skyapps.fish-vscode"
   _install_vscode_plugin "Which Key" "vspacecode.whichkey"
   _install_vscode_plugin "ShellCheck" "timonwong.shellcheck"
   _install_vscode_plugin "Highlight Matching Tag" "vincaslt.highlight-matching-tag"

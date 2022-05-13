@@ -16,7 +16,7 @@ want or don't understand before you install. Use at your own risk!
 
 ### Dependencies
 
-- `bash`, `zsh` or `fish`: a shell to run commands in
+- `bash`, `zsh`: a shell to run commands in
 - `curl`: to download stuff
 - internet
 
@@ -30,12 +30,6 @@ In `bash` or `zsh`:
 
 ```sh
 bash <(curl -Ls https://raw.github.com/benedictong42/dotfiles/master/installation/bootstrap.sh)
-```
-
-If you're using `fish`:
-
-```sh
-bash (curl -Ls https://raw.github.com/benedictong42/dotfiles/master/installation/bootstrap.sh | psub)
 ```
 
 ### Manual steps
@@ -76,7 +70,6 @@ specific or that should not tracked in `git`. They are:
 - `home/.gitconfig.local` - useful for customising git for your environment (see
   `home/.gitconfig.local.template`)
 - `home/.zshrc.local` - useful for customising `zsh`
-- `home/.config/fish/config.fish.local` - useful for customising `fish`
 - `home/.config/raycast/local` - useful for adding Raycast installation that have
   sensitive information hardcoded
 
@@ -118,8 +111,6 @@ it on your machine:
 - `installation/bootstrap.sh` - set `REPOSITORY` variable to your own repository
 - `installation/install.sh` - set `REPOSITORY_ORIGIN` variable to your own
   repository's origin
-- `home/.config/fish/fish_variables` - some of the variables have my home
-  directory baked in, so you will need to rename these
 
 And in case it wasn't obvious, the `home` directory in this project more or less
 tries to mirror what would be symlinked to your actual home directory. It's

@@ -9,7 +9,6 @@ setup_create_local_defaults() {
   local -ar FILES=(
     ".gitconfig.local"
     ".zshrc.local"
-    ".config/fish/config.fish.local"
   )
 
   local targetFile=""

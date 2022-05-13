@@ -1,14 +1,12 @@
 {
   "workbench.colorTheme": "Dracula",
   "security.workspace.trust.untrustedFiles": "open",
-  "terminal.integrated.defaultProfile.osx": "fish",
   "editor.fontFamily": "'Hack Nerd Font', 'Courier New', monospace",
   "editor.codeLens": false,
   "explorer.confirmDragAndDrop": false,
   "prettier.proseWrap": "always",
   "editor.formatOnSave": true,
   "files.associations": {
-    "fish_variables": "fish",
     ".env": "ini",
     "*.pbxproj": "applescript"
   },
