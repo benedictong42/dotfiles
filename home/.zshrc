@@ -61,6 +61,7 @@ export ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"
 export PATH="$PATH:$HOME/Library/Android/sdk/platform-tools"
 export JAVA_HOME="$HOME/.asdf/installs/java/zulu-11.54.23"
 
+export PATH="$PATH:/Applications/flameshot.app/Contents/MacOS/"
 
 asdf_update_java_home() {
   local java_path
