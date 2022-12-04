@@ -41,11 +41,12 @@ alias pyenv="source venv/bin/activate"
 
 # Setup asdf
 # https://hackercodex.com/guide/python-development-environment-on-mac-osx/
-. $(brew --prefix asdf)/asdf.sh
+. $(brew --prefix asdf)/libexec/asdf.sh
 # asdf reshim ruby
 # asdf reshim java
 # asdf reshim golang
 # asdf reshim nodejs
+
 
 # https://github.com/asdf-vm/asdf/issues/692#issuecomment-642748733
 autoload -U +X bashcompinit && bashcompinit
